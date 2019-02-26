@@ -1,0 +1,13 @@
+table.heatmap {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table.heatmap, table.heatmap th, table.heatmap td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+table.heatmap td:nth-child(1) {  
+    text-align: right;
+}
