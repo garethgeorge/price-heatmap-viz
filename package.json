@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "client": "cd client && npm start",
-    "server": "npx nodemon server/bin/apiserver.js",
+    "server": "npx nodemon --ignore ./pgdata --ignore ./pgdata-backup server/bin/apiserver.js",
     "dev": "npx concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "author": "gareth george",

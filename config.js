@@ -1,29 +1,22 @@
 module.exports = {
   admin_secret: 'YighFcnsQD742KmWMNa8gqgEUywpKZycNoEkmYNdKUGDEEHkGbzCuqRi%NxLMsUJ',
   pg: {
-    host: 'db',
+    host: 'localhost',
     user: 'postgres',
     database: 'postgres',
     password: 'sNoRjCyoKmPxh8pgk3M>zJ4cgBoeU8be',
     port: 5432
   },
-  backup_databases: [
-    {
-      host: '169.231.235.190', // Spot Price Data for Kyle instance
-      user: 'postgres',
-      database: 'postgres',
-      password: 'kXaVBEyzcPg8PZTdafwt',
-      port: 5432
-    },
-    {
-      host: 'db_backup',
-      user: 'postgres',
-      database: 'postgres',
-      password: 'sNoRjCyoKmPxh8pgk3M>zJ4cgBoeU8be',
-      port: 5433
-    }
-  ],
-  
+  // backup_databases: [
+  //   {
+  //     host: 'db_backup',
+  //     user: 'postgres',
+  //     database: 'postgres',
+  //     password: 'sNoRjCyoKmPxh8pgk3M>zJ4cgBoeU8be',
+  //     port: 5433
+  //   }
+  // ],
+
   // rich's zone_id to az mapping (rich being the data source, this is the mapping one would use...)
   zoneid_az_mapping: {
     "eun1-az1": "eu-north-1a",
@@ -63,7 +56,7 @@ module.exports = {
     "use1-az2": "us-east-1b",
     "use1-az4": "us-east-1c",
     "use1-az6": "us-east-1d",
-    "use1-az3": "us-east-1e",
+    "use1-az3": ".us-east-1e",
     "use1-az5": "us-east-1f",
     "use2-az1": "us-east-2a",
     "use2-az2": "us-east-2b",

@@ -123,7 +123,7 @@ module.exports = {
               )
               FROM days
             )
-          INSERT INTO dailyprices SELECT * FROM data 
+          INSERT INTO dailyprices SELECT * FROM data WHERE price IS NOT NULL
           ON CONFLICT ON CONSTRAINT dailyprices_pkey DO UPDATE SET price = (
             SELECT price FROM data WHERE config_id = dailyprices.config_id AND data.day = dailyprices.timestamp
           );
